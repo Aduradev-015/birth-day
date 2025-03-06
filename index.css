@@ -1,0 +1,122 @@
+/* Basic Styling (Apply to all pages) */  
+body {  
+    font-family: sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background-color: #f4f4f4;  
+    color: #1144eb;  
+}
+marquee{
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    background-color: yellow;
+}
+.slide{
+    height: 85vh;
+    width: 50%;
+    margin-inline: auto;
+}
+
+header {  
+    background-color: #333;  
+    color: #fff;  
+    padding: 1em 0;  
+    text-align: center;  
+}  
+
+nav a {  
+    color: #fff;  
+    text-decoration: none;  
+    padding: 0.5em;  
+}  
+
+section {  
+    padding: 2em;  
+    margin: 1em;  
+    background-color: #fff;  
+}  
+
+footer {  
+    text-align: center;  
+    padding: 1em 0;  
+    background-color: #333;  
+    color: #fff;  
+}  
+
+/* Homepage Header Styling */  
+.homepage-header {  
+    background-image: url('./pic\ 101\ birthday.jpg'); /* Replace with your image */  
+    background-size: cover;  
+    background-position: center;  
+    min-height: 500px; /* Adjust as needed */  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;  
+    text-shadow: 2px 2px 4px #000; /* Add a text shadow for better readability */  
+}  
+
+.homepage-header h1 {  
+    font-size: 3em;  
+}  
+
+/* Gallery Styling */  
+.gallery {  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: center; /* or space-around, space-between */  
+}  
+
+.gallery img {  
+    width: 300px; /* Adjust as needed */  
+    margin: 0.5em;  
+    border: 1px solid #ddd;  
+    padding: 0.2em;  
+    object-fit: cover; /* Prevents distortion */  
+    height: 200px; /* Set a fixed height for consistency */  
+}  
+
+/* Responsive Design using Media Queries */  
+@media (max-width: 768px) {  
+    /* Styles for tablets and smaller */  
+    header {  
+        padding: 0.5em 0;  
+    }  
+
+    nav {  
+        display: flex;  
+        flex-direction: column;  
+    }  
+
+    nav a {  
+        padding: 0.3em;  
+        text-align: center;  
+    }  
+
+    .gallery img {  
+        width: 100%; /* Make images take full width on smaller screens */  
+        height: auto; /* Reset height to auto for smaller screens */  
+    }  
+
+    .homepage-header {  
+        min-height: 300px; /* Adjust for smaller screens */  
+    }  
+}  
+
+@media (max-width: 480px) {  
+    /* Styles for phones */  
+    h1 {  
+        font-size: 1.5em;  
+    }  
+
+    section {  
+        padding: 1em;  
+        margin: 0.5em;  
+    }  
+    .homepage-header h1 {  
+      font-size: 2em;  
+    }  
+}  
