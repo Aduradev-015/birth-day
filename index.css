@@ -16,7 +16,7 @@ marquee{
 }
 .slide{
     height: 85vh;
-    width: 50%;
+    width: 40%;
     margin-inline: auto;
 }
 
@@ -128,7 +128,7 @@ footer {
       font-size: 2em;  
     }  
 }
-@media (min-width: 170px) {
+@media (max-width: 800px) {
     .slide{
         width: 100%;
     }
